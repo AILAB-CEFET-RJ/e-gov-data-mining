@@ -22,3 +22,16 @@ conda activate egov
 ```
 conda deactivate
 ```
+
+## Pipeline
+* RUN `pre_processamento/pre_proc_anvisa.ipynb`
+* RUN `pre_processamento/pre_proc_medicamentos.ipynb`
+* RUN `data_augmentation/medicamentos_augmentation.sh`
+* RUN `data_augmentation/anvisa_prod_augmentation.sh`
+* RUN `data_augmentation/anvisa_pa_augmentation.sh`
+* MOVE `datasets/medicamentos/medicamentos_aumentado.csv` TO `datasets/medicamentos/augmented/medicamentos_aumentado.csv`
+* MOVE `datasets/avisa/anvisa_principio_ativo_aumentado.csv` TO `datasets/anvisa/augmented/anvisa_principio_ativo_aumentado.csv`
+* MOVE `datasets/avisa/anvisa_produto_aumentado.csv` TO `datasets/anvisa/augmented/anvisa_produto_aumentado.csv`
+* RUN `pre_processamento/pre_proc_anvisa_augmented.ipynb`
+* RUN `pre_processamento/pre_proc_medicamentos_augmented.ipynb`
+* RUN `ean_key_map_builder` (not implemented)
