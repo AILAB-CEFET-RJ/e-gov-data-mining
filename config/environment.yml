@@ -1,0 +1,28 @@
+name: egov
+channels:
+  - defaults
+dependencies:
+  - beautifulsoup4 
+  - curl
+  - ipykernel 
+  - joblib 
+  - jupyter
+  - jupyter_client
+  - jupyter_console
+  - jupyter_core
+  - jupyter_server
+  - jupyterlab
+  - jupyterlab_pygments
+  - jupyterlab_server
+  - jupyterlab_widgets 
+  - matplotlib 
+  - numpy 
+  - pandas 
+  - python-snappy
+  - regex 
+  - requests 
+  - scikit-learn 
+  - scipy 
+  - seaborn 
+  - setuptools 
+  - tqdm
