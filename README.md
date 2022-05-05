@@ -37,3 +37,4 @@ conda deactivate
 * RUN `ean_key_map_builder` (not implemented)
 * RUN `pre_processamento/mapeamento_ean_chave.ipynb`
 * RUN `oversampling/oversampling.py`
+* RUN `training/train_test_split.py`
