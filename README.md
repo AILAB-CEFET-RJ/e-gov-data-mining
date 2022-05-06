@@ -49,25 +49,25 @@ fasttext supervised -input datasets/data.train.txt -output model/model
 fasttext test model/model.bin datasets/data.test.txt
 ```
 
-### The output of test will be displayed similar as below, where `P@1` and `R@1` are `Precision` and `Recall` values respectively.
+The output of test will be displayed similar as below, where `P@1` and `R@1` are `Precision` and `Recall` values respectively.
 ```shell
 N       734
 P@1     0.00681
 R@1     0.00681
 ```
 
-### To get predictions of each sample, type:
+### Get predictions of each sample
 ```shell
 fasttext predict model/model.bin datasets/data.test.txt
 ```
 
 ## Deactivating docker container and conda environment
 
-### In fastText docker container prompt, type:
+In fastText docker container prompt, type:
 ```shell
 exit
 ```
-### To deactivate conda environment:
+To deactivate conda environment, type:
 ```shell
 conda deactivate
 ```
